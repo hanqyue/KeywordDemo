@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:layout_marginLeft="@dimen/spacing"
+        android:text="@string/text_view"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintTop_toTopOf="@id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@id/constraintLayout"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="@dimen/spacing"
+        android:gravity="left|top"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:background="@drawable/edit_style"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_View"
+        app:layout_constraintStart_toStartOf="@id/text_View"
+        android:layout_marginEnd="@dimen/spacing" />
+
+    <TextView
+        android:id="@+id/keyword_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing"
+        android:text="@string/keyword"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintStart_toStartOf="@id/constraintLayout"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <EditText
+        android:id="@+id/keyword"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:hint="@string/inHint"
+        android:gravity="left|top"
+        android:textColorHint="#AAAAAA"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:background="@drawable/edit_style"
+        android:layout_marginRight="@dimen/spacing"
+        app:layout_constraintRight_toRightOf="@id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/keyword_View"
+        app:layout_constraintStart_toStartOf="@id/keyword_View"
+        android:layout_marginEnd="@dimen/spacing" />
+
+    <Button
+        android:id="@+id/sure_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize"
+        android:text="@string/sure_View"
+        app:layout_constraintTop_toBottomOf="@+id/keyword"
+        app:layout_constraintEnd_toEndOf="@id/keyword"
+        tools:layout_editor_absoluteX="288dp" />
+
+    <cn.coder_felicia.keyworddemo.CustomTextView
+        android:id="@+id/output_text"
+        android:layout_width="368dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="@dimen/spacing"
+        android:layout_marginRight="@dimen/spacing"
+        app:layout_constraintStart_toStartOf="@id/constraintLayout"
+        app:layout_constraintRight_toRightOf="@id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/sure_button"
+        tools:layout_editor_absoluteX="8dp" />
+
+</android.support.constraint.ConstraintLayout>
+

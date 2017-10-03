@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">自定义文本Demo</string>
+    <string name="text_view">文本</string>
+    <string name="keyword">关键字</string>
+    <string name="sure_View">输出</string>
+    <string name="inHint">请以,间隔</string>
+</resources>
